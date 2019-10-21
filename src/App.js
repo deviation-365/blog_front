@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-class App extends Component {
-  a = () => {
-    console.log('a');
-  };
-
-  render() {
-    return (
-      <>
-        <button type="button" onClick={this.a}>
-          abbb
-        </button>
-      </>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div>
+      App
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
